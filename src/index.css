@@ -12,6 +12,7 @@ button {
 
 li {
 	list-style: none;
+	cursor: default;
 }
 
 li:hover {
