@@ -9,3 +9,11 @@ body {
 button {
 	cursor: pointer;
 }
+
+li {
+	list-style: none;
+}
+
+li:hover {
+	background-color: #ccc;
+}

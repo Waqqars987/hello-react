@@ -1,11 +1,3 @@
 .App {
 	text-align: center;
 }
-
-li {
-	list-style: none;
-}
-
-li:hover {
-	background-color: #ccc;
-}
