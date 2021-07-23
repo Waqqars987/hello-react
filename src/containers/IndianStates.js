@@ -23,7 +23,7 @@ class IndianStates extends Component {
 		searchQuery: '',
 	};
 	searchBoxRef = React.createRef(); //For HTML Element Reference
-	statesRef = React.createRef(); //For API Data
+	IndianStates;
 
 	static getDerivedStateFromProps(props, state) {
 		console.log(111, 'getDerivedStateFromProps called!');
@@ -38,7 +38,7 @@ class IndianStates extends Component {
 			.then(response => response.json())
 			.then(data => {
 				this.setState({ filteredStates: data });
-				this.statesRef.current = data;
+				this.IndianStates = data;
 			})
 			.catch(err => console.error(err));
 
@@ -63,7 +63,7 @@ class IndianStates extends Component {
 
 		if (prevState.searchQuery !== this.state.searchQuery) {
 			this.setState({
-				filteredStates: searchStates(this.statesRef.current, this.state.searchQuery),
+				filteredStates: searchStates(this.IndianStates, this.state.searchQuery),
 			});
 		}
 	}
