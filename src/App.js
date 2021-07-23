@@ -1,3 +1,4 @@
+import Counter from './containers/Counter';
 import './App.css';
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 		<div className='App'>
 			<h1>Hello, React!</h1>
 			<hr />
+			<Counter />
 		</div>
 	);
 }
