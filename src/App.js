@@ -18,10 +18,13 @@ function App() {
 			</Button>
 
 			<hr />
-			{/* <Counter /> */}
-			{/* <hr /> */}
-			{/* <Superheroes /> */}
-			{/* <hr /> */}
+
+			<Counter />
+			<hr />
+
+			<Superheroes />
+			<hr />
+
 			{showIndianStates && <IndianStates />}
 		</div>
 	);

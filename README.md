@@ -1,3 +1,3 @@
 # hello-react
 
-### Lists & Keys
+### React Training Examples
